@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Form, Button } from "react-bootstrap";
+import ListaNoticias from "./ListaNoticias";
 
 const Formulario = () => {
   const [categoria, setCategoria] = useState("");
@@ -66,7 +67,7 @@ const Formulario = () => {
       </Form>
       </Container>
       <Container className="row">
-        {/* {mostrarNoticias && <ListaNoticias noticias={noticias.results} />} */}
+        {mostrarNoticias && <ListaNoticias noticias={noticias.results} />}
       </Container>
     </>
   );
